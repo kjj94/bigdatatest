@@ -110,6 +110,15 @@
     -webkit-transition: opacity 1.2s;
 
    }
+	.iframe{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1.2s;
+    -webkit-transition: opacity 1.2s;
+
+   }
 
    .text1opacity, .text2opacity {
         font-size:30px;
@@ -199,7 +208,7 @@
 
     <div class="col-8">
           <div id="secondvisualdiv">
-          	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://kjj94.github.io/bigdatatest/events_yr_fig.html" height="525" width="100%"></iframe>
+          	<iframe class="iframe" id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://kjj94.github.io/bigdatatest/events_yr_fig.html" height="525" width="100%"></iframe>
     
 	    </div>
 	  </div>
@@ -247,7 +256,7 @@
             .addTo(controller);
 	
 	new ScrollMagic.Scene({triggerElement: "#text4"})
-            .setClassToggle("#secondvisualdiv", "active")
+            .setClassToggle("iframe", "active")
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#text6"})
