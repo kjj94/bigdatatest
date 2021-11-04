@@ -234,7 +234,7 @@
     var controller = new ScrollMagic.Controller();
 
     	new ScrollMagic.Scene({triggerElement: "#text1"})
-          .setClassToggle(".img", "active")
+          .setClassToggle("active")
         	.addTo(controller);
 
     	new ScrollMagic.Scene({triggerElement: "#text2"})
@@ -250,12 +250,8 @@
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#text5"})
-            .setClassToggle("#firstvisualdiv", "deactive")
+            .setClassToggle("".img"", "active")
             .addTo(controller);
-
-        new ScrollMagic.Scene({triggerElement: "#text6"})
-              	.setClassToggle(".text4opacity", "active")
-              	.addTo(controller);
 
 </script>
 </body>
