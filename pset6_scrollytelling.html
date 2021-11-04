@@ -244,13 +244,22 @@
             .setClassToggle(".text3opacity", "active")
             .addTo(controller);
 	
-	new ScrollMagic.Scene({triggerElement: "#text5"})
+	 new ScrollMagic.Scene({triggerElement: "#text4"})
             .setClassToggle("iframe", "active")
+            .addTo(controller);
+	
+	new ScrollMagic.Scene({triggerElement: "#text5"})
+            .setClassToggle("iframe", "deactive")
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#text6"})
             .setClassToggle(".img", "active")
             .addTo(controller);
+	
+	new ScrollMagic.Scene({triggerElement: "#text7"})
+            .setClassToggle(".img", "deactive")
+            .addTo(controller);
+	
 
 </script>
 </body>
