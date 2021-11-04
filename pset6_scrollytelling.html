@@ -199,8 +199,10 @@
 
     <div class="col-8">
           <div id="secondvisualdiv">
-          <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://kjj94.github.io/bigdatatest/events_yr_fig.html" height="525" width="100%"></iframe>
-    </div>
+          	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://kjj94.github.io/bigdatatest/events_yr_fig.html" height="525" width="100%"></iframe>
+    
+	    </div>
+	  </div>
 </div>
 
 <div class="row">
@@ -220,8 +222,10 @@
 
 
       <div class="col-8">
-            <img class="img" src="https://pulitzercenter.org/sites/default/files/styles/orig_optimized/public/07-23-20/web-pp-02-mkohut_climate_migrants-final-print-002.jpg?itok=iswOZRCo">
-      </div>
+	      <div id="thirdvisualdiv">
+            	<img class="img" src="https://pulitzercenter.org/sites/default/files/styles/orig_optimized/public/07-23-20/web-pp-02-mkohut_climate_migrants-final-print-002.jpg?itok=iswOZRCo">
+      		</div>
+	      </div>
 </div>
 
     </main>
@@ -240,6 +244,10 @@
 
         new ScrollMagic.Scene({triggerElement: "#text3"})
             .setClassToggle(".text3opacity", "active")
+            .addTo(controller);
+	
+	new ScrollMagic.Scene({triggerElement: "#text4"})
+            .setClassToggle("#secondvisualdiv", "active")
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#text6"})
