@@ -180,9 +180,7 @@
                     <p class="text1opacity"> migration affects more than an individual </p>
                     <p class="text2opacity"> it affects many households</p>
                     <p class="text3opacity"> there is an average of 4.46 people per household</p>
-           <img class="img" src="https://pulitzercenter.org/sites/default/files/styles/orig_optimized/public/07-23-20/web-pp-02-mkohut_climate_migrants-final-print-002.jpg?itok=iswOZRCo">
-        
-		  
+  	  
 		  </div>
     
       </div>
@@ -222,7 +220,7 @@
 
 
       <div class="col-8">
-            <div id="secondvisualdiv">
+            <div id="thirdvisualdiv">
               <img class="img" src="https://pulitzercenter.org/sites/default/files/styles/orig_optimized/public/07-23-20/web-pp-02-mkohut_climate_migrants-final-print-002.jpg?itok=iswOZRCo">
       </div>
 </div>
@@ -233,16 +231,12 @@
 <script type="text/javascript">
     var controller = new ScrollMagic.Controller();
 
-    	new ScrollMagic.Scene({triggerElement: "#text1"})
-          .setClassToggle("active")
-        	.addTo(controller);
-
     	new ScrollMagic.Scene({triggerElement: "#text2"})
-          .setClassToggle(".text1opacity", "active")
+          	.setClassToggle(".text1opacity", "active")
         	.addTo(controller);
 
-		  new ScrollMagic.Scene({triggerElement: "#text3"})
-          .setClassToggle(".text2opacity", "active")
+	new ScrollMagic.Scene({triggerElement: "#text3"})
+          	.setClassToggle(".text2opacity", "active")
         	.addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#text4"})
@@ -250,7 +244,7 @@
             .addTo(controller);
 
         new ScrollMagic.Scene({triggerElement: "#text5"})
-            .setClassToggle("".img"", "active")
+            .setClassToggle(".img", "active")
             .addTo(controller);
 
 </script>
